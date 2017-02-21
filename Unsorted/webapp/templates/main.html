@@ -1,0 +1,24 @@
+<html>
+<head><title>Django District</title></head>
+<body>
+    <h1>Django Distrct</h1>
+    <h2><span id="connected">{{ connected }}</span> 
+        users are on this page right now.</h2>
+
+    <script type="text/javascript" 
+                src="jquery.js"></script>
+    <script type="text/javascript" src="socket.io.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            console.log(location.port)
+            //var url = "http://" + document.domain + ":" + location.port;
+            var url = "http://0.0.0.0:9000"
+            var socket = io.connect(url + "/dd");
+            socket.on('msg', function(msg) {
+                console.log(msg);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+    font-family:  Helvetica, Arial, sans-serif;
+    margin: 32px;
+    background-color: black;
+}
+
+.sparklines path {
+    stroke: greenyellow;
+    stroke-width: 2;
+    fill: none;
+}
+
+#power-gauge {
+    display: block;
+    margin: auto;
+    width:75%;
+}
+
+#power-gauge g.arc {
+    fill: white;
+}
+
+#power-gauge g.pointer {
+    fill: orangered;
+}
+
+text {
+    background-color: lawngreen;
+}
+
+#power-gauge g.label {
+    position: absolute;
+}
+
+#power-gauge g.label text {
+    position: relative;
+    text-anchor: middle;
+    font-size: 20px;
+    font-weight: bold;
+    fill: white;
+}
+
+
+
+#sparklines {
+    display: block;
+    margin: auto;
+    width:85%;
+}
+       

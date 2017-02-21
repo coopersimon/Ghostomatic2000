@@ -1,0 +1,17 @@
+<html>
+      <head><title>Client!!!</title></head>
+      <body>
+            <h1>Client connected to python</h1>
+            <script type="text/javascript" src="jquery.js"></script>
+            <script type="text/javascript" src="socket.io.js"></script>
+            <script type="text/javascript">
+                  $(document).ready(function () {
+                        var url = "http://" + document.domain + ":" + location.port;
+                        var socket = io.connect(url + "/dd");
+                        socket.on('msg', function(msg) {
+                              $("connected").html(msg.count);
+                        });
+                  });
+            </script>
+      </body>
+</html>
