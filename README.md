@@ -11,4 +11,4 @@ The server also runs Python, using Flask. It could be used by our consumers loca
 Our client website code is found in the directory **ClientWebsite**. It features a user-friendly interface which converts the raw JSON messages into graphics. The Spook-o-meter shows the current amount of haunting near the device, and the graph below shows recent levels of paranormal activity (lower on the graph indicates more ghosts).
 
 ## The Sales Website
-Our website can be found [here](https://spook-o-matic.strikingly.com). It is our main interaction with clients.
+Our website can be found [here](http://spook-o-matic.strikingly.com). It is our main interaction with clients.
